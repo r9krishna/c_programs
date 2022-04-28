@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main()
+{
+	int n, bit;
+	while(1)
+	{
+		printf("\n\n Enter the number: ");
+		scanf("%d", &n);
+		printf("\n Enter the which bit has to clear? :");
+		scanf("%d", &bit);
+		int x = n & (~(1<<bit));
+
+		printf("\n Number: %d after clear the Number is : %d ", n, x);
+	}
+	return 0;
+}
